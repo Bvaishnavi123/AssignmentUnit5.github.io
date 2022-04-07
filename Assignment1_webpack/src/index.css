@@ -1,0 +1,17 @@
+#textareas{
+    width:240px;
+    /* height: 200px; */
+    border: 1px solid black;
+    margin-top:10px
+}
+#img{
+    width:50px
+}
+#overview{
+    display:flex;
+    width:250px;
+    height:50px;
+    margin-bottom: 10px;
+
+    /* border: 1px solid black; */
+}
