@@ -1,0 +1,14 @@
+.App {
+  text-align: center;
+}
+
+button{
+  margin: 10px;
+  padding: 10px;
+}
+.redcolor{
+  color: red;
+}
+.greencolor{
+  color: green;
+}
