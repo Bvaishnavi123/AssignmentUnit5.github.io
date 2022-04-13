@@ -1,4 +1,12 @@
-export const TodoItem = ({todo})=>
+export const TodoItem = ({todo,handlestatus})=>
 {
-  return <div>{todo}</div>
+
+    return (
+      <div>
+        {todo.id}-{todo.title} - {todo.status ? "Done":"Not Done"}
+      <button onClick={()=>handlestatus(todo.id)}>Toggle</button>
+      </div>
+    
+    )
+  
 }
