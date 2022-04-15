@@ -1,0 +1,9 @@
+.listItem{
+    text-decoration: line-through;
+
+}
+
+ul li{
+    list-style-type: none;
+    cursor: pointer;
+}
