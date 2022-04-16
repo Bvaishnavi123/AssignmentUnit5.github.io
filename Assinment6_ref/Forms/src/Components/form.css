@@ -1,0 +1,21 @@
+#container{
+    width: 300px;
+    border: 1px solid black;
+    text-align: center;
+    margin:  auto;
+    
+   
+}
+#Showdata{
+  width: 50%;
+}
+#Maincontainer{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content:space-between;
+}
+.inputElement{
+    width: 90%;
+    margin-bottom: 10px;
+}
