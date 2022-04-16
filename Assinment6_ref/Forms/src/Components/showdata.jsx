@@ -22,7 +22,7 @@ const getData = async()=>{
                 <th>Department</th>
               </tr>
               <tr>
-                <td>{e.name}e</td>
+                <td>{e.name}</td>
                 <td>{e.address}</td>
                 <td>{e.Department}</td>
               </tr>

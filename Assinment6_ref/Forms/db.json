@@ -1,5 +1,13 @@
 {
   "posts": [
-
+    {
+      "name": "vaishnavi",
+      "number": "8668770993",
+      "address": "Latur",
+      "Department": "Civil",
+      "salary": "20000",
+      "status": "Single",
+      "id": 1
+    }
   ]
 }
