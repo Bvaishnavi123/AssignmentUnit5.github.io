@@ -36,7 +36,7 @@ const getData = async()=>{
 
 
 
-export   const getData = async()=>{
-    const res = await fetch("http://localhost:8080/posts").then((d)=>d.json())
-    setdata(res)
- }
+// export   const getData = async()=>{
+//     const res = await fetch("http://localhost:8080/posts").then((d)=>d.json())
+//     setdata(res)
+//  }
