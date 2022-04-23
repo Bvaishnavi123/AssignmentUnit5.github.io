@@ -1,9 +1,18 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
 export const LoginStatus = () => {
-  return <div>
-    Email:<p>eve.holt@reqres.in</p>
-    Token : <h3>QpwL5tke4Pnpja7X4</h3>
+  const [user, setuser] = useState({});
 
+  useEffect(() => {
+    const payload = {
+      email: "eve.holt@reqres.in",
+      password: "cityslicka",
+    };
+    axios.post("https://reqres.in/api/login", payload).then(({data}) => {
+      setuser(data);
+    });
+  }, []);
+  return <div>
+    Token :  <h5>{user.token}</h5>
   </div>;
 };

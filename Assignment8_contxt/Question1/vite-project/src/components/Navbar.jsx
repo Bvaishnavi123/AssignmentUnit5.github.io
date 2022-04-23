@@ -2,10 +2,8 @@ import { useContext } from "react";
 import { Authcontext } from "../Context/AuthContext";
 
 export const Navbar = () => {
-  const { toggleAuth } = useContext(Authcontext);
-  const { auth } = useContext(Authcontext);
-  const { isAuth } = useContext(Authcontext);
-
+  const {isAuth} = useContext(Authcontext)
+  const {toggleAuth} = useContext(Authcontext)
   return (
     <div
       style={{
@@ -16,11 +14,9 @@ export const Navbar = () => {
       }}
     >
       {" "}
-      <button
-       onClick={() => { isAuth(); toggleAuth();}}
-      >
-        {auth}
-      </button>
+      <button onClick={()=>{
+        toggleAuth()
+      }} >{isAuth === false ?"Login":"Logout"}</button>
     </div>
   );
 };

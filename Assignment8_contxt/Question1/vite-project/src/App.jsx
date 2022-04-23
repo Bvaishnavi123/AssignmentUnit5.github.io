@@ -8,12 +8,12 @@ import {useContext} from "react"
 import{Authcontext} from "./Context/AuthContext"
 function App() {
   
-  const {trueauth} = useContext(Authcontext)
+  const {isAuth} = useContext(Authcontext)
  
   return (
     <div className="App">
       <Navbar/>
-      {trueauth==="false" ?  <LoginStatus />:"Click On Login button to see user" }
+      {isAuth === true ?<LoginStatus/>:""}
     
     
       
