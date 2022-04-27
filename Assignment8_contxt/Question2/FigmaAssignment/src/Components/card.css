@@ -1,0 +1,22 @@
+.imageDiv{
+    width: 40px;
+    border-radius: 50%;
+}
+.submainDiv{
+    width: 300px;
+   
+    display: flex;
+    justify-content: space-around;
+}
+.mainDiv{
+   
+    width: 300px;
+    border: 1px solid rgb(52, 48, 48);
+    padding :20px;
+   
+}
+.container{
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    margin-top:7%;
+
+}
