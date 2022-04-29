@@ -3,29 +3,30 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { useDispatch, useSelector } from "react-redux";
 import { ADD_TODO } from "../Redux/Action";
+import { ToggleTodo } from "../Redux/Action";
 
 export const TodoDetails = () => {
-  //https://reqres.in/api/users/
   const { id } = useParams();
-  const [user, setuser] = useState({});
-
   const dispatch = useDispatch();
-
-  useEffect(() => {
-    axios.get(` http://localhost:8000/todos/${id}`).then(({ data }) => {
-      setuser(data);
-    });
-  }, []);
+  const SingleTodo = useSelector((store) => store.todo);
+  //console.log(SingleTodo)
+  const FilterTodo = SingleTodo.filter((todo) => todo.id == id);
+  const text = FilterTodo[0];
+  //console.log(text);
+  //console.log(FilterTodo)
 
   const statusHandler = () => {
-    
+    //console.log(id)
+    dispatch(ToggleTodo(text.id));
   };
   //console.log(user);
- 
+
   return (
     <div>
-      <p>{user.title}</p>
-      <button onClick={statusHandler}>{user.status===false?"Incomplete":"Complete"}</button>
+      <p>{text.title}</p>
+      <button onClick={statusHandler}>
+        {text.status ? "Complete" : "Incomplete"}
+      </button>
     </div>
   );
 };

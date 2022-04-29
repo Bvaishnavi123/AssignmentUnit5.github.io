@@ -1,8 +1,7 @@
 import {legacy_createStore} from "redux"
 import{Reducer} from "./Reducer"
 const initial = {
-    Todo : [],
-    status : "Incomplete"
+    todo : [],
 }
 
 const store = legacy_createStore(Reducer,initial)
