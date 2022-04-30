@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { ADD_TODO,DeleteTodo} from "../Redux/Action";
+import { ADD_TODO, DeleteTodo } from "../Redux/Action";
 import { useDispatch, useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 
@@ -27,13 +27,11 @@ export const TodoInformationAdd = () => {
   const addHandler = () => {
     const payload = {
       title: text,
-      status : false
-  };
+      status: false,
+    };
 
     axios.post("http://localhost:8000/todos", payload);
   };
-
- 
 
   return (
     <div>
@@ -51,7 +49,13 @@ export const TodoInformationAdd = () => {
             <Link key={i} to={`/${e.id}`}>
               <div>{e.title}</div>
             </Link>
-            <button onClick={()=>{ dispatch(DeleteTodo(e.id))}}>Delete</button>
+            <button
+              onClick={() => {
+                dispatch(DeleteTodo(e.id));
+              }}
+            >
+              Delete
+            </button>
           </div>
         );
       })}
