@@ -1,0 +1,36 @@
+#cardContainer{
+    width: 100%;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 10px;
+    margin: auto;
+    
+    
+}
+#imageofProduct{
+    width:200px;
+    height: 200px;
+    margin:auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    margin-bottom: 10px;
+   
+}
+.ImageContainer{
+   text-align: center;
+   width: 100%;
+   
+
+}
+#productCard{
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    padding: 20px;
+    
+}
+.title-container{
+    
+    height:50px;
+    margin-bottom: 10px;
+
+}

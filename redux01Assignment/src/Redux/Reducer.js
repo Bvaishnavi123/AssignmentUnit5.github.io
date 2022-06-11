@@ -1,8 +1,5 @@
 
-import  {ADD_TODO} from "./Action"
-import {TOGGLE_TODO} from "./Action"
-import {DELETE} from "./Action"
-import{AUTH} from "./Action"
+import { ADD_TODO, AUTH, DELETE, TOGGLE_TODO } from "./Action"
 export const Reducer = (store,{type,payload})=>{
     //console.log(store)
      switch(type)

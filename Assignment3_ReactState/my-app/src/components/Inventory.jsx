@@ -11,7 +11,7 @@ export const Inventory = () => {
   const total = inv.books + inv.notebooks + inv.pens;
 
   const [totalprice, totalpricehandler] = useState(total);
-  // Create add and remove functions here that changes the
+  // Create add and remove functions here that changes the  
   // state.
 
   const Bookhandle = (v) => {

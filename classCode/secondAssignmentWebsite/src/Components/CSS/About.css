@@ -1,0 +1,31 @@
+.d-block{
+   
+    width: 60%;
+    height: 60%;
+ 
+   
+}
+.carousel-item {
+    height: 800px;
+    margin-top: 10px;
+}
+.ProductContainer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+    margin-top: 50px;
+}
+.card-img-top{
+    height: 300px;
+}
+#carouselExampleControls{
+
+    height:500px
+}
+.trending-container{
+    /* border: 1px solid black; */
+    margin: auto;
+    text-align: center;
+    font-size:30px;
+    font-weight: bold
+}

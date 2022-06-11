@@ -9,3 +9,4 @@ const initial = {
 const store = legacy_createStore(Reducer,initial)
 
 export {store}
+
