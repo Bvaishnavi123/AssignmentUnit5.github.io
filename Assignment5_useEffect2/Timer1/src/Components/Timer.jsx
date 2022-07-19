@@ -5,6 +5,7 @@ export const Timer = () => {
   //const [pause,setpause] = useState(false);
   const timerRef = useRef(null)  // current : null
   useEffect(() => {
+    
     timerRef.current = setInterval(() => {
       setTimer((prevState) => {
         //console.log(prevState)
